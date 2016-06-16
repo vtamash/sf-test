@@ -27,9 +27,16 @@
 <body>
 <center>
     <h1>TEST SIMS</h1>
+    <form id="loginForm" enctype='application/json' target="loginframe" action="https://test.kencogroup.com/val/sims_web/sf-login" method="POST">
+      <input type="text" name="username" value="blah" />
+      <input type="text" name="password" value="goofy" />
+      <input type="text" name="repEmail" value="tamashevich@gmail.com" />
+      <input type="text" name="salesOpportunity" value="006c000000EQNWwAAP" />
+      <input type="submit">
+    </form>
     <iframe id='loginframe' src="" width="1024" height="600"></iframe>
     <br /><br />
-    <a href="#" id="ilogin" onclick="login(); return false; ">LOG IN</a>
+    <a href="" id="ilogin" onclick="login(); return false; ">LOG IN</a>
 </center>
 </body>
 </html>
