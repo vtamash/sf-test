@@ -1,1 +1,39 @@
-Hello, Test of Sales Force!
+<!doctype html>
+	<html>
+	  <head>
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+	    <title>Testiframe by vtamash</title>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	    <meta name="viewport" content="width=device-width">
+
+	  <script language="javascript">
+	    
+	  function login(){
+	    console.log('start');
+	    $.post( 
+	          "https://test.kencogroup.com/val/sims_web/sf-login",
+	          '{ "username": "blah", "password":"goofy", "repEmail":"tamashevich@gmail.com","salesOpportunity":"006c000000EQNWwAAP" }',
+	          function(data) {
+	            console.log('Done');
+	             window.location = 'https://vtamash.github.io/sf-test/';
+	         }
+	       );
+	    console.log('end');
+	  }
+	    
+	  </script>
+	
+	  </head>
+	  <body>
+	    <center>
+	      
+	      <h1>TEST SIMS</h1>
+	      <iframe id='loginframe' src="https://test.kencogroup.com/val/sims_web" width="1024" height="600"></iframe>
+	
+	      <br /><br />
+	      <a href="#" id="ilogin" onclick="login(); return false; ">LOG IN</a>
+	
+	    </center>
+	  </body>
+	</html>
