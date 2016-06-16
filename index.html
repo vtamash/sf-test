@@ -33,14 +33,19 @@
 	  </head>
 	  <body>
 	    <form id="loginForm" target="loginframe"  action="https://test.kencogroup.com/val/sims_web/sf-login" method="POST"></form>
+	    <script language="javascript">
+	      $(document).ready(function(){
+                  console.log('Ready.');
+	          var loginform= document.getElementById("loginForm");
+	          loginform.style.display = "none";
+	          loginform.submit();
+	      });
+	    </script>
 	    <center>
-	      
 	      <h1>TEST SIMS</h1>
 	      <iframe id='loginframe' src="#" width="1024" height="600"></iframe>
-	
 	      <br /><br />
 	      <a href="#" id="ilogin" onclick="login(); return false; ">LOG IN</a>
-	
 	    </center>
 	  </body>
 	</html>
