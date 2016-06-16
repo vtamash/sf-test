@@ -14,7 +14,8 @@
                     '{ "username": "blah", "password":"goofy", "repEmail":"tamashevich@gmail.com","salesOpportunity":"006c000000EQNWwAAP" }',
                     function(data) {
                         console.log('Done');
-                        window.location = 'https://vtamash.github.io/sf-test/';
+                        var iframe = document.getElementById("loginframe");
+                        iframe.src = iframe.src;
                     }
             );
             console.log('end');
