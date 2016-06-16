@@ -10,16 +10,15 @@
 <body>
 <center>
     <h1>TEST SIMS</h1>
-    <form enctype="application/json" method="POST" id="loginForm" target="myFrame" action="https://test.kencogroup.com/val/sims_web/sf-login">
+    <form enctype="application/json" method="POST" id="loginForm" target="simsFrame" action="https://test.kencogroup.com/val/sims_web/sf-login">
       <input type="text" name="username" value="blah" />
       <input type="text" name="password" value="goofy" />
       <input type="text" name="repEmail" value="tamashevich@gmail.com" />
       <input type="text" name="salesOpportunity" value="006c000000EQNWwAAP" />
       <input type="submit">
     </form>
-    <iframe  name="myFrame" id='loginframe' src="" width="1024" height="600"></iframe>
+    <iframe  name="simsFrame" src="" width="1024" height="600"></iframe>
     <br /><br />
-    <a href="" id="ilogin" onclick="login(); return false; ">LOG IN</a>
 </center>
 </body>
 </html>
